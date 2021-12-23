@@ -1,0 +1,651 @@
+/*headerstuff*/
+
+html, body {
+  margin:0;
+  padding:0; 
+  }
+
+h1, h2, h3, h4, p {
+  font-family: "Readex Pro";
+}
+
+h1 {
+  text-align: center;
+  color: white !important;
+  font-size: 54px;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:110px;
+  padding-top: 3%;
+  padding-bottom: 3%
+}
+
+#topsplash, #footerfront {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.options {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.optimg {
+  height:400px;
+  transition: all .2s ease-in-out;
+}
+
+.optimg:hover {
+  transform: scale(1.1);
+}
+
+.producttype {
+  text-align: center;
+  font-size: 36px;
+}
+#bkgrd {
+  position:absolute;
+  z-index: -1;
+  max-width: 100%;
+}
+
+#topsplash {
+  position:relative;
+  z-index: 0;
+}
+
+
+/* first shapeshift */
+
+.topshape {
+  height: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.shifterimg {
+  display: flex;
+  justify-content:center;
+}
+
+.shiftershape {
+  transition: all .2s ease-in-out;
+}
+
+.shiftershape:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* editable body */
+
+#graybkgrd{
+  position:absolute;
+  z-index: -1;
+  max-width: 60%;
+  right:0;
+}
+
+.editheads {
+  font-size: 42px;
+  text-align: center;
+}
+
+#past, #service, #stats, #testimonial {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+}
+
+.carousel {
+  display:flex;
+  justify-content: center;
+}
+
+.projexample {
+  height: 215px;
+  padding-right: 2%;
+}
+.trigger {
+  height: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.carouseltrigger {
+  display: flex;
+  justify-content:center;
+  padding-top: 2%;
+}
+#seemore {
+  text-align: right;
+}
+
+
+
+
+.servicefeature {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+#servicesections {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-template-rows: auto auto auto;
+  grid-gap: 4%;
+  margin-left: 25%;
+}
+
+.serviceshape {
+  height: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.anchor {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  padding: .5%;
+  font-size: 18px;
+  font-family: "Readex Pro";
+  border-radius: 1px;
+  border-color: white;
+}
+
+
+
+
+
+#stats {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#statholder {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.statimage {
+  height:150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.statcard {
+  display: grid;
+  grid-template-columns: 175px;
+  grid-template-rows: auto auto;
+  padding-top: 2%;
+}
+.stattxt {
+  text-align: center;
+}
+
+
+#bordering {
+  border-style: solid;
+  /* border-color: gray; */
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#testimonialtext {
+  text-align:center;
+  padding-right:3%;
+  padding-left:3%;
+}
+
+
+.botshape {
+  height: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#nestshift {
+  padding-top:2%;
+}
+
+
+/* footer style */
+
+
+#bkgrdfooter {
+  position:absolute;
+  z-index: -1;
+  max-width: 100%;
+}
+
+#footerfront {
+  padding-top: 5%;
+}
+
+.contact {
+  color: white;
+  font-size: 42px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+.inputclass {
+  margin-left: .5%;
+  margin-right: .5%;
+}
+
+#tophalf {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* margin-left: 20%;
+  margin-right: 20%; */
+}
+
+#bothalf {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* margin-left: 20%;
+  margin-right: 20%; */
+  padding-top: .5%;
+}
+
+.formprompt {
+  color: white;
+  size: 32px;
+}
+
+label {
+  color: white;
+  font-size:16px;
+  font-family: "Readex Pro";
+}
+
+#submitCTA {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  padding: .5%;
+  font-size: 18px;
+  font-family: "Readex Pro";
+}
+
+#logobottom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:70px;
+  padding-top: 3%;
+  padding-bottom: 3%
+}
+
+.questcheck {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*tablet*/
+@media only screen and (max-width: 850px) {
+  #logo {
+    height:70px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .optimg {
+    height:400px;
+  }
+  .producttype {
+    font-size: 22px;
+  }
+
+  .editheads {
+    font-size: 42px;
+    text-align: center;
+  }
+  .projexample {
+    height: 215px;
+    padding-right: 2%;
+  }
+  .trigger {
+    height: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .carouseltrigger {
+    display: flex;
+    justify-content:center;
+    padding-top: 2%;
+  }
+  #seemore {
+    text-align: center;
+}
+
+.servicefeature {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 1%;
+}
+#servicesections {
+  display: grid;
+  grid-template-columns: 60%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 4%;
+  margin-left: 25%;
+}
+
+.serviceshape {
+  height: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.anchor {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: .5%;
+  font-size: 18px;
+  font-family: "Readex Pro";
+}
+
+#servicebutton {
+  margin-top: 18%;
+}
+
+#stats {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.statimage {
+  height:150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.statcard {
+  display: grid;
+  grid-template-columns: 175px;
+  grid-template-rows: auto auto;
+  padding-top: 2%;
+}
+.stattxt {
+  text-align: center;
+}
+
+#footerfront {
+  padding-top: 7%;
+}
+
+.contact {
+
+  font-size: 24px;
+}
+
+.question {
+  align-items: center;
+  height: 20px;
+}
+
+
+#bothalf {
+
+  padding-top: 3%;
+}
+
+.formprompt {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+label {
+  font-size:12px;
+}
+
+#submitCTA {
+  margin-top: 3%;
+  padding: .5%;
+  font-size: 16px;
+}
+
+#logobottom {
+  height:60px;
+  padding-top: 5%;
+  padding-bottom: 3%
+}
+
+.questcheck {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+}
+/*mobile*/
+@media only screen and (max-width: 500px) {
+  #logo {
+    height:40px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .optimg {
+    height:300px;
+  }
+  .producttype {
+    font-size: 18px;
+  }
+  .editheads {
+    font-size: 28px;
+    text-align: center;
+  }
+  .projexample {
+    height: 215px;
+    padding-right: 2%;
+  }
+  .trigger {
+    height: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .carouseltrigger {
+    display: flex;
+    justify-content:center;
+    padding-top: 2%;
+  }
+  #seemore {
+    text-align: center;
+  }
+
+
+  .servicefeature {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 2%;
+  }
+  #servicesections {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 4%;
+    margin-left: 12%;
+  }
+  
+  .serviceshape {
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .anchor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: .5%;
+    font-size: 18px;
+    font-family: "Readex Pro";
+  }
+  #servicebutton {
+    margin-top: 28%;
+  }
+  
+  #stats {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .statimage {
+    height:150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .statcard {
+    display: grid;
+    grid-template-columns: 175px;
+    grid-template-rows: auto auto;
+    padding-top: 2%;
+  }
+  .stattxt {
+    text-align: center;
+  }
+
+  #bkgrdfooter {
+    padding-top: 77%;
+  }
+
+
+
+  #tophalf {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+  }
+  
+  #bothalf {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    padding-top: .5%;
+  }
+
+  /* #footerfront {
+    padding-top: 7%;
+  } */
+  
+  .contact {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+  }
+  
+  .question {
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+  }
+
+  
+  .formprompt {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  label {
+    font-size:16px;
+    color: black;
+  }
+  
+  #submitCTA {
+    margin-top: 5%;
+    padding: .5%;
+    font-size: 16px;
+  }
+  
+  #logobottom {
+    height:60px;
+    padding-top: 5%;
+    padding-bottom: 3%
+  }
+  
+  .questcheck {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #questionchecks {
+    padding-top: 5%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Done */
+
+/* - HTML structure
+- PH images
+- PH text */
+/* - CSS desk
+- CSS tablet */
+
+/* TO DO:
+
+
+
+
+- CSS hovers
+- CSS mob
+
+
+- JS clickie
+- JS form
+- JS color change
+- final images
+- final color */
